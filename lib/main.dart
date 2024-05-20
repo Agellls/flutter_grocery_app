@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_grocery_ui/item_widget.dart';
+import 'package:flutter_grocery_ui/upload_image/services.dart';
+import 'package:flutter_grocery_ui/upload_image/upload_image_screen.dart';
 
 import 'bloc/product_bloc.dart';
 import 'data.dart';
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const MainPage(),
+        home: const UploadImage(),
       ),
     );
   }
